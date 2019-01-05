@@ -1,0 +1,70 @@
+emailgen v1.0
+
+emailgen is a utility written by Damian Behymer in 2018 to facilitate the writing
+of HTML newsletters for the League of Linguists at UIUC or other organizations.
+
+Usage: python emailgen.py [optional filename arguments]
+
+optional arguments:
+ -t (template file, defaults to template.html)
+ -e (email text file, defaults to emailtext.txt)
+ -o (output html file, defaults to current date YYYY-MM-DD.html)
+
+Example:
+linguist@localhost$ python emailgen.py -e files/content.txt \
+	-t my_newsletter_template.html -o newsletter.html
+
+emailgen searches through the template until it finds a substring of the form
+##FIELD##, called a "tag". Then, it searches the email text for a matching tag.
+If it is found, the text between that tag and the next tag (or the end of the
+file) in the email text will replace the tag in the template. This process
+repeats until the end of the template is reached, at which point all changes
+to the template are saved to an output file.
+
+Double-hash sequences that are not meant to delimit tags in either emailtext.txt
+or template.html can be escaped with the backslash, like \## or #\#. In either
+case the string will be output as ## and will not be recognized as the beginning
+of a tag.
+
+OPT tags: A tag called something like ##XYZ## can be enclosed between two tags
+of the form ##OPT-XYZ##. If the XYZ field is empty or nonexistent in
+the email text, all of the text between the OPT tags will be excluded from the
+generated .html file. This is useful for when an HTML element should be present
+when a field is populated but absent when it is not.
+
+L and P fields: When the name of a field ends in "-L" or "-P", special rules
+govern how the field's input is processed before it ends up in the output .html
+document. If a field name ends in "-L" (the tag would look like ##LIST-L##), the
+field's input is dissected into substrings delimited by " - ". Each of these
+substrings which is nonempty is surrounded by <li> tags when it is put into the
+document. Similarly, a field that ends in "-P" will have its input cut up into
+substrings by endline character, and each nonempty substring will be surrounded
+by <p> tags when it is pasted into the document, unless that substring is already
+enclosed in tags like <h1>, <ul>, etc.
+
+Below is the format that the email text should follow. Additional fields can be
+added; for example, if the template were modified to contain ##EXAMPLE##, the
+email text could have an added ##EXAMPLE## field whose text would be inserted
+in place of ##EXAMPLE##.  
+
+##ORGANIZATION##
+League of Linguists
+##PREHEADER##
+You'll see this text in your email preview, but not in the email!
+##TAGLINE##
+Make me catchy!
+##CTALINK##
+https://www.google.com/
+##CTATEXT##
+Come join us at Google!
+##TLDR-L##
+ - Meeting tomorrow!
+ - Other stuff too.
+##BODY-P##
+This is an email.
+Yep, definitely an email.
+Lorem ipsum dolor sit amet, blah blah blah...
+##SALUTATION##
+Yours,
+##SIGNATURE##
+Damian Behymer

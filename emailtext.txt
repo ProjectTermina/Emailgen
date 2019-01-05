@@ -1,0 +1,44 @@
+##BGCOLOR##
+#eee
+##CTACOLOR##
+#6990ca
+##CTATEXTCOLOR##
+#fff
+
+##ORGANIZATION##
+League of Linguists
+##PREHEADER##
+Did you know that dog in Polish is pies? ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~
+##IMAGEHEADERLINK##
+http://i.imgur.com/AOS8T0h.png
+##TAGLINE##
+The newsletter that reads <strong>you</strong>
+##CTALINK##
+https://publish.illinois.edu/leagueoflinguists/league-of-linguists-ballot-registration-2018/
+##CTATEXT##
+Run for Exec Board!
+
+##TLDR-L##
+ - This week's meeting is -- you guessed it -- Wednesday at 6pm in the Kahane Lounge.
+ - Applications are still being accepted to run for positions on our 2018-2019 Exec Board! Click the blue button up top to declare your intent to run for a position.
+##BODY-P##
+<h3>DAWN OF THE FIRST WEDNESDAY</h3>
+Two weeks remain.
+This week -- the first Wednesday -- we will be making thank-you cards for the people who have contributed presentations and/or cookies to the League of Linguists this year. Or we'll just get cards from CVS and sign personal notes in them. Or whatever.
+Next week -- the second Wednesday -- we will be electing the members of next year's LoL Exec Board. Click the button at the top of the newsletter to announce your intent to run for one or more of those esteemed offices.
+The third Wednesday: May 2. The last day of classes. I know not with what weapons the third Wednesday will be fought, but the fourth Wednesday will be during finals, so obviously we won't be meeting.
+##SALUTATION##
+Yowza yowza bo-bowza,
+##SIGNATURE##
+The LoL Exec Board
+
+##EMPTYTAG##
+
+##FACEBOOKLINK##
+https://www.facebook.com/loluiuc/
+##TWITTERLINK##
+https://twitter.com/lol_uiuc/
+##WORDPRESSLINK##
+https://lol.linguistics.illinois.edu/
+##UNSUBLINK##
+https://lists.illinois.edu/lists/signoff/lol

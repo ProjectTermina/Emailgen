@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      ##ORGANIZATION## Newsletter
+    </title>
+    <meta charset="utf-8">
+    <style>
+      .email-background {
+        background: ##BGCOLOR##;
+        padding: 10px;
+      }
+      .email-container, .email-header, .email-text, .email-footer, .pre-header, .signature {
+        max-width: 500px;
+        background: #fff;
+        font-family: sans-serif;
+        margin: 0 auto 0 auto;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+      .icons {
+        margin: 0 auto;
+        width: 80px;
+      }
+      .footer {
+        margin: auto;
+        width: auto;
+        color: #555;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .email-text {
+        margin: 20px;
+        font-size: 100%;
+        text-align: left;
+        color: #555;
+        line-height: 1.5;
+      }
+      .pre-header {
+        background: ##BGCOLOR##;
+        color: ##BGCOLOR##;
+        font-size: 0px;
+      }
+      .signature {
+        text-indent: 10%;
+        margin-bottom: 20px;
+      }
+      .tagline {
+        font-style: italic;
+        font-size: 90%;
+        font-family: sans-serif;
+        color: #888;
+        margin: 0;
+        padding: 5%;
+      }
+      .email-footer {
+        font-size: 80%;
+        font-family: serif;
+        color: #ccc;
+        margin: 20px 0 0 0;
+      }
+      .tldr {
+        margin: 20px;
+        font-size: 100%;
+        text-align: left;
+        color: #222;
+        line-height: 1.5;
+      }
+      a:link.foot {
+        color: #ccc;
+      }
+      a:visited.foot {
+        color: #ccc;
+      }
+      a:hover.foot {
+        color: #666;
+      }
+      a:active.foot {
+        color: #666;
+      }
+      a:link {
+        color: black;
+      }
+      a:visited {
+        color: gray;
+      }
+      a:hover {
+        color: black;
+      }
+      a:active {
+        color: black;
+      }
+      img {
+        max-width: 100%;
+      }
+      h1 {
+        text-align: center;
+        color: #666;
+        line-height: 0 1;
+      }
+      h2 {
+        text-align: center;
+        color: #666;
+        line-height: 1;
+      }
+      .cta {
+        text-align: center;
+        margin: 20px;
+      }
+      a.cta {
+        text-decoration: none;
+        display: inline-block;
+        background: ##CTACOLOR##;
+        color: ##CTATEXTCOLOR##;
+        margin: 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-indent: -2px;
+        font-size: 100%;
+        text-align: left;
+        color: #666;
+        line-height: 1.5;
+      }
+    </style>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  </head>
+  <body>
+    <div class="email-background">
+      ##OPT-PREHEADER##<div class="pre-header">
+        <p>
+          ##PREHEADER##
+        </p>
+      </div>##OPT-PREHEADER##
+
+      <div class="email-container">
+        <div class="email-header">
+          ##OPT-IMAGEHEADERLINK##<img src="##IMAGEHEADERLINK##">##OPT-IMAGEHEADERLINK##
+          ##OPT-TAGLINE##<h2 class="tagline">
+            ##TAGLINE##
+          </h2>##OPT-TAGLINE##
+        </div>
+
+        ##OPT-CTATEXT##<div class="cta">
+          <a class="cta" href="##CTALINK##">##CTATEXT##</a>
+        </div>##OPT-CTATEXT##
+
+        ##OPT-TLDR-L##<div class="tldr">
+          <p>
+            <strong>tl;dr:</strong>
+          </p>
+
+          <div style="margin-left: 2em">
+            ##TLDR-L##
+          </div>
+        </div>##OPT-TLDR-L##
+
+        <div class="email-text">
+          ##BODY-P##
+          ##OPT-SALUTATION##<p>
+            ##SALUTATION##
+          </p>##OPT-SALUTATION##
+
+          ##OPT-SIGNATURE##<p class="signature">
+            ##SIGNATURE##
+          </p>##OPT-SIGNATURE##
+        </div>
+
+        <div class="email-footer">
+          <div class="icons">
+            ##OPT-FACEBOOKLINK##<a href="##FACEBOOKLINK##"><img height="24px" src="https://i.imgur.com/dN2YW0I.png" style="float: left; margin-right: 4px; margin-bottom: 0.5em;" width="24px"></a>##OPT-FACEBOOKLINK## ##OPT-TWITTERLINK##<a href="##TWITTERLINK##"><img height="24px" src="https://i.imgur.com/HDo7TVd.png" style="float: left; margin-right: 4px; margin-bottom: 0.5em;" width="24px"></a>##OPT-TWITTERLINK## ##OPT-WORDPRESSLINK##<a href="##WORDPRESSLINK##"><img height="24px" src="https://i.imgur.com/Xx8JZrT.png" style="float: left; margin-bottom: 0.5em;" width="24px"></a>##OPT-WORDPRESSLINK##
+          </div>
+        </div>
+      </div>
+
+      ##OPT-UNSUBLINK##<p class="footer">
+        <a class="foot" href="##UNSUBLINK##">Unsubscribe</a>
+      </p>##OPT-UNSUBLINK##
+    </div>
+  </body>
+</html>
